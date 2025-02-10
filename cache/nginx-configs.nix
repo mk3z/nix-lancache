@@ -11,6 +11,7 @@ with pkgs; let
     CACHE_MAX_AGE = cfg.cacheMaxAge;
     MIN_FREE_DISK = cfg.minFreeDisk;
     CACHE_SLICE_SIZE = cfg.cacheSliceSize;
+    LOG_FORMAT = cfg.logFormat;
     NGINX_WORKER_PROCESSES = cfg.nginxWorkerProcesses;
     UPSTREAM_DNS = concatStringsSep " " cfg.resolvers;
     "/data/cache/cache" = cfg.cacheDir;

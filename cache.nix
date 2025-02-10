@@ -61,6 +61,11 @@ in {
         type = with types; str;
         default = "/var/cache/nginx/cache";
       };
+      logFormat = mkOption {
+        description = "Nginx log format";
+        type = with types; str;
+        default = "cachelog";
+      };
     };
   };
 
