@@ -98,5 +98,7 @@ in {
     };
 
     networking.firewall.allowedTCPPorts = [80 443];
+
+    systemd.services.nginx.serviceConfig.ReadWritePaths = [cfg.cacheDir];
   };
 }
