@@ -14,7 +14,8 @@ with pkgs; let
     LOG_FORMAT = cfg.logFormat;
     NGINX_WORKER_PROCESSES = cfg.nginxWorkerProcesses;
     UPSTREAM_DNS = concatStringsSep " " cfg.resolvers;
-    "/data/cache/cache" = cfg.cacheDir;
+    "/data/cache/cache" = "${cfg.cacheDir}/cache";
+    "/data/logs" = "${cfg.cacheDir}/logs";
     "listen 80 reuseport;" = "listen 80 reuseport default_server;";
   };
 
