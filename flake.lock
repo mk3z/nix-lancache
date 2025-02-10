@@ -3,11 +3,11 @@
     "cache-domains": {
       "flake": false,
       "locked": {
-        "lastModified": 1662045619,
-        "narHash": "sha256-Qfwu2ZDvMrrVOzN54r2VserP+ezJVZ7Y8efHb/1tG2c=",
+        "lastModified": 1729844030,
+        "narHash": "sha256-MRyIz1l23B/ibVc1sPi6BwtB0imi47z1gqQxm5PM60Q=",
         "owner": "uklans",
         "repo": "cache-domains",
-        "rev": "257f009282afb1d9816e21bf09cb10812fc2b4c2",
+        "rev": "67594ce10c85250bf5e3cc3c6f4a0abb90abd25c",
         "type": "github"
       },
       "original": {
@@ -19,11 +19,11 @@
     "monolithic": {
       "flake": false,
       "locked": {
-        "lastModified": 1668255020,
-        "narHash": "sha256-+94O6pgxVVOZZ3imlrf/hywBSY9g/LFwBer1KST6iPE=",
+        "lastModified": 1734732295,
+        "narHash": "sha256-xxqpMSXgE2ahXt7ov6sIuMQOpaym0g55+HZ+BqSUeKo=",
         "owner": "lancachenet",
         "repo": "monolithic",
-        "rev": "a45516468d9dd5dd7b96cdf311c07adb472c4e7f",
+        "rev": "cfdd0c6102c53af5450d12a24fb7014c2859074c",
         "type": "github"
       },
       "original": {
