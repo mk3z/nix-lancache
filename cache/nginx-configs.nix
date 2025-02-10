@@ -1,11 +1,15 @@
-{ monolithic, cfg, pkgs }:
+{
+  monolithic,
+  cfg,
+  pkgs,
+}:
 with builtins;
-with pkgs;
-let
+with pkgs; let
   replacements = {
     CACHE_INDEX_SIZE = cfg.cacheIndexSize;
     CACHE_DISK_SIZE = cfg.cacheDiskSize;
     CACHE_MAX_AGE = cfg.cacheMaxAge;
+    MIN_FREE_DISK = cfg.minFreeDisk;
     CACHE_SLICE_SIZE = cfg.cacheSliceSize;
     NGINX_WORKER_PROCESSES = cfg.nginxWorkerProcesses;
     UPSTREAM_DNS = concatStringsSep " " cfg.resolvers;
@@ -29,10 +33,10 @@ let
     done
   '';
 in
-stdenv.mkDerivation {
-  name = "lancache-nginx-configs";
-  builder = "${bash}/bin/bash";
-  args = [ builder ];
-  src = monolithic;
-  system = builtins.currentSystem;
-}
+  stdenv.mkDerivation {
+    name = "lancache-nginx-configs";
+    builder = "${bash}/bin/bash";
+    args = [builder];
+    src = monolithic;
+    system = builtins.currentSystem;
+  }
